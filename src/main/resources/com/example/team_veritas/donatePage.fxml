@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="930.0" layoutY="1.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/dashboard.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="225.0" layoutX="705.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/dashname.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="146.0" layoutX="595.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="638.0" fitWidth="231.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/sidebar.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="dashboard" layoutY="179.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: 000000;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="profile" layoutY="229.0" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: 000000;" text="Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="bloodbank" layoutY="279.0" mnemonicParsing="false" onAction="#switchToBank" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: 000000;" text="Blood Bank" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="donor" layoutY="329.0" mnemonicParsing="false" onAction="#switchToDonor" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: 000000;" text="Donor" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="donate" layoutY="379.0" mnemonicParsing="false" mouseTransparent="true" onAction="#switchToDonate" prefHeight="50.0" prefWidth="228.0" style="-fx-background-color: 000000;" text="Become a Donor" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="471.0" fitWidth="637.0" layoutX="280.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/border.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="463.0" fitWidth="596.0" layoutX="285.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/body.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="414.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donor Registration">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.9090909054785064" startX="1.0" startY="0.28030301585341943">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.24210526049137115" green="8.966861641965806E-4" blue="8.966861641965806E-4" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="#8c0000" layoutX="482.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donor name :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#8c0000" layoutX="482.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="635.0" layoutY="293.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="90.0" text="Male" textFill="#8c0000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="729.0" layoutY="293.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="90.0" text="Female" textFill="#8c0000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <Text fill="#8c0000" layoutX="488.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#8c0000" layoutX="480.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#8c0000" layoutX="478.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood group :" wrappingWidth="115.75762939453125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#8c0000" layoutX="482.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#8c0000" layoutX="480.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#8c0000" layoutX="480.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm password :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="500.0" layoutY="564.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: #8c0000;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="310.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/donate.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="639.0" layoutY="252.0" opacity="0.67" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" />
+      <TextField layoutX="639.0" layoutY="329.0" opacity="0.67" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" />
+      <TextField layoutX="639.0" layoutY="366.0" opacity="0.67" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" />
+      <TextField layoutX="639.0" layoutY="404.0" opacity="0.67" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" />
+      <TextField layoutX="639.0" layoutY="434.0" opacity="0.67" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" />
+      <TextField layoutX="639.0" layoutY="499.0" opacity="0.67" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" />
+      <TextField layoutX="639.0" layoutY="467.0" opacity="0.67" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" />
+   </children>
+</AnchorPane>

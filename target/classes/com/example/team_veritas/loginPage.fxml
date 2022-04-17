@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="631.0" fitWidth="930.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/Bloodbank.jpeg" />
+         </image>
+      </ImageView>
+      <Region layoutX="588.0" layoutY="217.0" opacity="0.85" prefHeight="354.0" prefWidth="267.0" style="-fx-background-color: #FA8072;" />
+      <TextField layoutX="600.0" layoutY="296.0" prefHeight="38.0" prefWidth="242.0" promptText="username" />
+      <PasswordField layoutX="600.0" layoutY="355.0" prefHeight="38.0" prefWidth="242.0" promptText="password" />
+      <Button fx:id="login" layoutX="676.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #8b0000;" text="LOGIN" textFill="WHITE" />
+      <Button fx:id="signup" layoutX="599.0" layoutY="491.0" mnemonicParsing="false" onAction="#switchToSignup" opacity="0.0" prefHeight="38.0" prefWidth="242.0" text="Sign up" />
+      <Text fill="DARKRED" layoutX="602.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? Sign-up!" textAlignment="CENTER" wrappingWidth="235.73675155639648">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="98.0" fitWidth="225.0" layoutX="607.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/name.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#8c0000" layoutX="549.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="An Emergency Blood-bank Management System">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

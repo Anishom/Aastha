@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.team_veritas.ScController">
+   <children>
+      <ImageView layoutX="14.0" opacity="0.43" pickOnBounds="true">
+         <image>
+            <Image url="@Img/o.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="809.0" fitWidth="302.0" pickOnBounds="true">
+         <image>
+            <Image url="@Img/red.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="dashboard" layoutX="99.0" layoutY="171.0" mnemonicParsing="false" onAction="#switchToDashboard" opacity="0.97" style="-fx-background-color: #fc0202;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="profile" layoutX="99.0" layoutY="232.0" mnemonicParsing="false" onAction="#switchToProfile" style="-fx-background-color: #fc0202;" text="Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="bloodbank" layoutX="97.0" layoutY="292.0" mnemonicParsing="false" onAction="#switchToBank" style="-fx-background-color: #FC0202;" text="Blood Bank" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="donor" layoutX="97.0" layoutY="358.0" mnemonicParsing="false" onAction="#switchToDonor" style="-fx-background-color: FC0202;" text="Donor" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="335.0" layoutY="56.0" prefHeight="96.0" prefWidth="222.0" text="AASTHA" textFill="#ea0707">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="51.0" />
+         </font>
+      </Label>
+      <Text fill="RED" layoutX="393.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find blood donors in your area" wrappingWidth="328.53668212890625">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="784.0" layoutY="190.0" prefHeight="38.0" prefWidth="154.0" promptText="District" />
+      <TextArea layoutX="977.0" layoutY="189.0" prefHeight="24.0" prefWidth="154.0" promptText="Blood group" />
+      <ScrollPane layoutX="393.0" layoutY="258.0" prefHeight="200.0" prefWidth="742.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
